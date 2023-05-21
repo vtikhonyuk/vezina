@@ -62,12 +62,12 @@ const Home: NextPage = () => {
             </button>
           ) : address ? (
             <>
-              <button
+              {/* <button
                 onClick={() => signIn("google")}
                 className={styles.mainButton}
               >
                 Login with Google
-              </button>
+              </button> */}
               <button
                 onClick={() => loginWithWallet()}
                 className={styles.mainButton}
