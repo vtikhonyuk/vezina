@@ -21,6 +21,7 @@ const Home: NextPage = () => {
 
   const loginWithWallet = async () => {
     const payload = await auth?.login();
+    console.log('payload: ' + JSON.stringify(payload))
     await signIn("credentials", {
       payload: JSON.stringify(payload),
       redirect: false,
